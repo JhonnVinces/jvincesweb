@@ -179,8 +179,8 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
-    background-position: center;
+    /*background-image: url(../img/header.jpg);
+    background-position: center;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -474,4 +474,12 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #222;
+}
+
+.video-wrapper {
+    position: absolute;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
 }
