@@ -4421,10 +4421,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-  background-color: #ddd;
+  background-color: #000000;
 }
 .navbar-default .navbar-toggle .icon-bar {
-  background-color: #888;
+  background-color: #FFF;
 }
 .navbar-default .navbar-collapse,
 .navbar-default .navbar-form {
