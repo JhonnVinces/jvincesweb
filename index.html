@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -87,25 +88,31 @@
                     <p>“Cuando uno se siente atraído por la libertad y la pasión, debe manifestarla para trascender.” <br>
                     <cite>―Pérez Celis</cite>
                     </p>
-                    
+                   
                 </div>
             </div>
     </header> 
 
     <section class="bg-primary" id="about">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">We've got what you need!</h2>
+            <div class="row" data-sr="enter left, hustle 20px">
+                <div class="col-lg-4 col-lg-offset-1">
+                   <img class="img-responsive img-circle img-border"   src="./img/javier.jpg" alt="">
+                </div>
+                <br>
+                <div class="col-lg-6 text-center">
+                     <h2 class="section-heading">¿Quien soy?</h2>
                     <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                    <p class="text-faded">Hola!!!, mi nombre es Jhonn Vinces soy mante de la seguridad e inseguridad informática.<br>Curioso – Autodidacta - Divulgador - CryptoParty </p>
+                    <a href="#"><i class="fa fa-twitter-square fa-2x "></i></a>
+                    <a href="#"><i class="fa fa-github-square fa-2x "></i></a><br><br>
+                    <a href="#" class="btn btn-default btn-xl">Mi Historia De Vida!</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="services">
+    <section class="bg-primary" id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -245,7 +252,7 @@
         </div>
     </section>
 
-    <aside class="bg-dark">
+    <aside class="bg-primary">
         <div class="container text-center">
             <div class="call-to-action">
                 <h2>Free Download at Start Bootstrap!</h2>
@@ -254,7 +261,7 @@
         </div>
     </aside>
 
-    <section id="contact">
+    <section class="bg-primary" id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -273,6 +280,9 @@
             </div>
         </div>
     </section>
+    
+     <!-- scrollReveal -->
+    <script src="js/scrollReveal.js"></script>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -288,6 +298,31 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 
+    <!-- scrollReveal -->
+    <script src="js/scrollReveal.js"></script>    
+    <script type="text/javascript">
+          (function($) {
+
+            'use strict';
+
+            window.sr= new scrollReveal({
+              reset: true,
+              move: '50px',
+              mobile: true
+            });
+
+          })();
+    </script>
+    <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-55186174-1', 'auto');
+          ga('send', 'pageview');
+    </script>
+    
 </body>
 
 </html>
