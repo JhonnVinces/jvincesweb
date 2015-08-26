@@ -214,7 +214,7 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    text-shadow: 2px 1px 1px #212121;
+    text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;
 }
 
 @media(min-width:768px) {
@@ -490,6 +490,7 @@ right: 0;
 top: 0;
 bottom: 0;
 z-index: 1;
+/*fondo para imagen de header*/
 }
 
 
