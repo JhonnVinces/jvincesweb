@@ -47,13 +47,16 @@ a:focus {
 
 
 
-h1,
+h1 {
+   font-family: 'Orbitron', sans-serif;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-family: 'Orbitron', sans-serif;
 }
 
 p {
