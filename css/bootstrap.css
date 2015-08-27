@@ -6569,4 +6569,13 @@ button.close {
     display: none !important;
   }
 }
+
+
+.communitylogo {
+    width: 150px ;
+    background: #fff;
+    border-radius: 5px;
+    
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
