@@ -32,10 +32,20 @@ a {
     transition: all .35s;
 }
 
+.acolor {
+     color:#FF0097;
+}
+
+.acolor1 {
+    color: rgb(142, 22, 13);
+}
+
 a:hover,
 a:focus {
     color: #FFFFFF;
 }
+
+
 
 h1,
 h2,
@@ -51,6 +61,7 @@ p {
     font-size: 16px;
     line-height: 1.5;
 }
+
 
 .bg-primary {
     background-color: #000000;
@@ -501,7 +512,7 @@ z-index: 1;
     overflow: hidden;
     text-align: center;
     z-index: 99999999;
-   /* background-color: #777777;*/
+    /*background-color: #777777;*/
     color: #eeeeee;
     width: 50px;
     height: 48px;
@@ -520,7 +531,7 @@ z-index: 1;
     transition: all 0.5s ease-in-out;
 }
 .scroll-top-wrapper:hover {
-    background-color: #888888;
+    /*background-color: #888888;*/
 }
 .scroll-top-wrapper.show {
     visibility:visible;
@@ -531,4 +542,12 @@ z-index: 1;
     line-height: inherit;
 }
  
+
+.community-logo {
+    width: 150px ;
+    background: #fff;
+    border-radius: 5px;
+    
+}
+
 
