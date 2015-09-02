@@ -3,8 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+ <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?v3"></script>
 </head>
 <body>
-	<iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3986.907670354107!2d-79.89141099999999!3d-2.1886810000000043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x902d6e7600921b35%3A0xce25b5c344d98777!2sHotel+Oro+Verde+Guayaquil%2C+Garc%C3%ADa+Moreno%2C+Guayaquil+090311!3m2!1d-2.188681!2d-79.89141099999999!5e0!3m2!1ses-419!2sec!4v1441124158609" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+	<div id="mapa" style="width: 700px; height: 500px;">
+		
+	</div>
+	<script type="text/javascript">
+	var divMapa = document.getElementById('mapa');
+	navigator.geolocation.getCurrentPosition(fn_ok, fn_mal) ;
+	function fn_mal() {  }
+	function fn_ok ( rta ) {
+		var lat = rta.coords.latitude;
+		var lon = rta.coords.longitude;
+
+		var gLatLon = new google.maps.LatLng ( lat, lon) ;
+		var objConfig = {
+			zoom: 17,
+			center: gLatLon
+		}
+
+		var gMapa= new google.maps.Map ( divMapa, objConfig);
+		var objConfigMarker = {
+			position: gLatLon ,
+			map: gMapa,
+			title : "Usted esta aqui"
+		}
+		
+	}
+
+	</script>
+
+
+	
 </body>
 </html>

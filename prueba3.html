@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+  <script src="https://raw.githubusercontent.com/HPNeo/gmaps/master/gmaps.js"></script>
+
+   <style>
+      html, body, #directions_map {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+    </style>
+
+ 	<script>
+var map;
+$(document).ready(function(){
+  var map = new GMaps({
+    el: '#directions_map',
+    lat: 51.5073346,
+    lng: -0.1276831,
+    zoom:15
+  });
+  GMaps.geolocate({
+    success: function(position){
+      map.setCenter(position.coords.latitude, position.coords.longitude);
+       map.drawRoute({
+        origin: [position.coords.latitude, position.coords.longitude],
+        destination: [-0.1088386, -78.4723645], 
+        travelMode: 'driving',
+        strokeColor: '#000',
+        strokeOpacity: 0.6,
+        strokeWeight: 6
+      });
+     map.addMarker({
+  lat: -0.1088386,
+  lng: -78.4723645,
+  title: 'Chongo divas',
+  infoWindow: {
+  content: '<p>Para que culees sin parar</p>'
+}
+});
+    },
+    error: function(error){
+      alert('La Geolocalización falló: '+error.message);
+    },
+    not_supported: function(){
+      alert("Tu navegador no soporta geolocalización");
+    }
+
+  });
+});
+	</script>
+
+</head>
+<body>
+
+          <div id="directions_map"></div>
+
+
+	
+</body>
+</html>
